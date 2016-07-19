@@ -4,7 +4,7 @@ library(stringr)
 library(ggplot2)
 
 ### import data from csv file
-salmondata <- read.csv("data.csv",header = TRUE, check.names=TRUE)
+salmondata <- read.csv("https://github.com/srijitajana/public_codes/blob/master/data.csv",header = TRUE, check.names=TRUE)
 
 ## convert from wide to long format
 data_long <- gather(salmondata, Year, Count, X1993:X2013)
